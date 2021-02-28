@@ -5,7 +5,7 @@ export const CenterLayout: React.FC = ({ children }) => {
   const chatIsOpen = useRoomChatStore((s) => s.open);
   return (
     <div
-      className={`max-w-screen-sm w-full h-full flex flex-col relative phone-simulator ${chatIsOpen ? "chat-is-open" : ""}`}
+      className={`max-w-screen-sm w-full flex flex-col relative phone-simulator ${chatIsOpen ? "chat-is-open" : ""}`}
     >
       {children}
     </div>
